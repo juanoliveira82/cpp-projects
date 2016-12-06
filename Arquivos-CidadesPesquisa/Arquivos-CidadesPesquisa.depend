@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1478609806 source:z:\prog1\arquivos-cidadespesquisa\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<fstream>
+	<string>
+	"split.hpp"
+
+1478607352 z:\prog1\arquivos-cidadespesquisa\split.hpp
+	<string>
+	<sstream>
+	<vector>
+
+1479819171 source:c:\users\a120130\downloads\arquivos-cidadespesquisa\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<fstream>
+	<string>
+	"split.hpp"
+
+1478607352 c:\users\a120130\downloads\arquivos-cidadespesquisa\split.hpp
+	<string>
+	<sstream>
+	<vector>
+
