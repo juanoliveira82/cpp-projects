@@ -1,10 +1,12 @@
 # depslib dependency file v1.0
-1480988718 source:/home/juanoliveira/git-repos/cpp-projects/Project_Distance-Between-Cities/main.cpp
+1481049608 source:/home/juanoliveira/git-repos/cpp-projects/Project_Distance-Between-Cities/main.cpp
 	<iostream>
 	<cstdlib>
 	<fstream>
-	<string>
+	<math.h>
 	"split.hpp"
+	<iomanip>
+	<string>
 
 1478607352 /home/juanoliveira/git-repos/cpp-projects/Project_Distance-Between-Cities/split.hpp
 	<string>

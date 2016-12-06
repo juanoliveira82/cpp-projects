@@ -1,8 +1,9 @@
 #include <iostream>
 #include <cstdlib>
 #include <fstream>
-#include <cmath>
+#include <math.h>
 #include "split.hpp"
+#include <string>
 
 using namespace std;
 
@@ -80,20 +81,43 @@ int main(){
         }
     }arquivoMunicip.close();
 
-    cout<<"\nCIDADE 1: "<<cep1City<<endl;
-    cout<<"LATITUDE: "<<City1Latitude<<"\nLONGITUDE: "<<City1Longitude<<endl;
-
-    cout<<"\nCIDADE 2: "<<cep2City<<endl;
-    cout<<"LATITUDE: "<<City2Latitude<<"\nLONGITUDE: "<<City2Longitude<<endl;
+    cout<<"\n Cidade 1 - Latitude: ";
+    cout<<City1Latitude<<" Longitude: "<<City1Longitude<<endl;
+    cout<<" Cidade 2 - Latitude: ";
+    cout<<City2Latitude<<" Longitude: "<<City2Longitude<<endl;
 
     /* conta */
-    DIST (A, B) = R ∗ acos(α + β ∗ δ);
+    double A,B,C,R,PI;
+    double distCidades, Cid1Lat, Cid2Lat, Cid1Long, Cid2Long, CidLong, valorRadiano;
+    PI = 3.1415926536;
+    R = 6372.795477598;
 
-    α = sen(City1Latitude) ∗ sen(City2Latitude);
-    β = cos(City1Latitude) ∗ cos(City2Latitude);
-    δ = cos(A.lon − B.lon);
+    Cid1Lat = atof(City1Latitude.c_str());
+    cout<<"\n Cidade 1 Latitude: "<<Cid1Lat<<endl;
+    Cid1Long = atof(City1Longitude.c_str());
+    cout<<"\n Cidade 1 Longitude: "<<Cid1Long<<endl;
+    Cid2Lat = atof(City2Latitude.c_str());
+    cout<<"\n Cidade 2 Latitude: "<<Cid2Lat<<endl;
+    Cid2Long = atof(City2Longitude.c_str());
+    cout<<"\n Cidade 2 Longitude: "<<Cid2Long<<endl;
+    CidLong = Cid1Long - Cid2Long;
+    cout<<"\n Longitude Overall: "<<CidLong<<endl;
 
-    R = 6372, 795477598;
+    A = (sin(Cid1Lat)) * (sin(Cid2Lat));
+    cout<<"\n"<<A<<endl;
+    B = (cos(Cid1Lat)) * (cos(Cid2Lat));
+    cout<<"\n"<<B<<endl;
+    C = cos(CidLong);
+    cout<<"\n"<<C<<endl;
+
+    distCidades = R * (acos(A + B * C));
+    cout<<"\n"<<distCidades<<endl;
+
+    valorRadiano = distCidades * PI / 180;
+
+    cout<< "\n dist: "<<valorRadiano<<" KM"<<endl;
+
+    /* Cornélio Procópio-PR;86300000;Leópolis-PR;86330000; 10,120 KM */
 
     cout<<"\n"<<cep1CityEstate<<" -> "<<cep2CityEstate<<endl;
 
