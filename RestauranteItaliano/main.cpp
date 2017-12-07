@@ -1,12 +1,17 @@
+// Author: Juan Oliveira
 #include <iostream>
 #include <stdlib.h>
 #include <iomanip>
+
 using namespace std;
+
 #define NMESAS 25
 #define NPEDITENS 50
+
 int MatrizMesa[NMESAS][NPEDITENS]={0};
 int m=0, p=0, numMesa;
 float total=0;
+
 void mostrarMenu(){
     cout<<"\n  Mesa selecionada: "<<numMesa<<endl;
     cout<<"\n       COMIDAS        "<<endl;
@@ -29,6 +34,7 @@ void mostrarMenu(){
     cout<<"  33 - Mocca                        11,00"<<endl;
     cout<<"  34 - Cappuccino                   13,00"<<endl;
 }
+
 int main(){
     cout << "\n\tSistema de Restaurante Italiano"<<endl;
     cout<<"\n  Nosso restaurante possui 25 mesas, numeradas de 0 a 24.";
