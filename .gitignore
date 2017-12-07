@@ -1,7 +1,5 @@
-/ProjectDistanceBetweenCities/bin/
-/ProjectDistanceBetweenCities/obj/
-ProjectDistanceBetweenCities/ProjectDistanceBetweenCities.cbp
-ProjectDistanceBetweenCities/ProjectDistanceBetweenCities.layout
-ProjectDistanceBetweenCities/ProjectDistanceBetweenCities.depend
-ProjectDistanceBetweenCities/cep_municipios.zip
-ProjectDistanceBetweenCities/municipios_lat_lon.zip
+*.o
+*.exe
+*.cbp
+*.layout
+*.depend
