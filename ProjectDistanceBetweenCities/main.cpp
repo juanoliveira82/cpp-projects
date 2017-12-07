@@ -2,8 +2,8 @@
 #include <cstdlib>
 #include <fstream>
 #include <math.h>
-#include "split.hpp"
 #include <string>
+#include "split.hpp"
 
 using namespace std;
 
@@ -16,7 +16,7 @@ int main(){
     string linha,cep1City,cep1CityEstate,cep2City,cep2CityEstate,City1Latitude,City1Longitude,City2Latitude,City2Longitude;
     int cep1, cep2;
     bool findCEP = false;
-    cout<<"\n\tDistance Between Cities"<<endl;
+    cout<<"\n\tDistancia entre cidades"<<endl;
     cout<<"\n  CEP 1: ";
     cin>>cep1;
     cout<<"\n  CEP 2: ";
